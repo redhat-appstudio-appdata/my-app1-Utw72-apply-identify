@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-s4jy
+  namespace: pdave-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:22f0c0ca4aac6b6adfd1f8807ca82571208f877c5a10445994f03b215e7fbc28
+        name: my-java-springboot
+        resources: {}
+status: {}
